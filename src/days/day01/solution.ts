@@ -23,6 +23,7 @@ const processData = (data: string): number => {
 
   const numbers = dataArr.map((line: string): number => {
     const numInLine = line.match(/\d/g);
+
     if (numInLine && numInLine?.length === 1) {
       return parseInt(numInLine[0]) * 10 + parseInt(numInLine[0]);
     } else if (numInLine && numInLine?.length > 1) {
@@ -30,6 +31,7 @@ const processData = (data: string): number => {
         parseInt(numInLine[0]) * 10 + parseInt(numInLine[numInLine.length - 1])
       );
     }
+
     return 0;
   });
 
@@ -44,7 +46,7 @@ const main = (): void => {
   const fileData = readFile("input.txt");
   const sum = processData(fileData);
 
-  console.log(sum); // 54968
+  console.log("The new Calibration value is: ", sum); // 54968
 };
 
 main();
