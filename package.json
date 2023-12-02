@@ -1,0 +1,24 @@
+{
+  "name": "advent-of-code-2023",
+  "version": "1.0.0",
+  "description": "This is repo about solutions for Advent of code 2023 challenges.",
+  "main": "index.js",
+  "scripts": {
+    "start": "node dist/index.js",
+    "build": "rimraf dist && tsc",
+    "dev": "tsc-watch --onSuccess \" nodemon -q dist/index.js\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^20.10.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.3.2"
+  },
+  "dependencies": {
+    "node": "^21.2.0",
+    "rimraf": "^5.0.5",
+    "tsc-watch": "^6.0.4"
+  }
+}
