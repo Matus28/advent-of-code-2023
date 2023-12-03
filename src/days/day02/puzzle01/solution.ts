@@ -21,7 +21,7 @@ const getGamesData = (str: string): any => {
   const arr = str.split(/\r?\n/g);
   let sum: number = 0;
 
-  const gamesData = arr.forEach((line: string) => {
+  arr.forEach((line: string) => {
     let isPossible: boolean = true;
 
     const lineArr = line.split(":");
