@@ -85,7 +85,7 @@ export const main = (): number => {
   const fileData = readFile("input.txt");
   const sum = processData(fileData);
 
-  console.log("The new Calibration value is: ", sum); // 54968
+  console.log("The new Calibration value is: ", sum); // 54094
   return sum;
 };
 
